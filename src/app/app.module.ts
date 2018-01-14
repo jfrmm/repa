@@ -8,10 +8,14 @@ import { AppComponent } from './app.component';
 
 // our module with Material parts
 import { MaterialModule } from './material.module';
+import { HomeComponent } from './home/home.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
