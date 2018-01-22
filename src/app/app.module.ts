@@ -3,27 +3,35 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 
 // our module with Material parts
 import { MaterialModule } from './material.module';
+
+// our components
+import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
+
+// services
+import { AreaService } from './_services/area.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactsComponent
+    ContactsComponent,
+    NavbarComponent,
   ],
   imports: [
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    AreaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

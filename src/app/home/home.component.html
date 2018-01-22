@@ -1,13 +1,29 @@
-<mat-grid-list cols="4" rowHeight="200px">
+<mat-grid-list [cols]="grid.cols" [rowHeight]="grid.rowHeight">
+
   <mat-grid-tile [colspan]="4" [rowspan]="2" [style.background]="introImage.color">
     <span>
       <img [src]="introImage.path" height="100%">
     </span>
   </mat-grid-tile>
+
 </mat-grid-list>
 
-<mat-grid-list cols="4" rowHeight="200px">
-  <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-    {{tile.text}}
-  </mat-grid-tile>
-</mat-grid-list>
+<mat-card *ngFor="let area of areas; index as i; let isOdd = odd; let isEven = even" [class.odd]="isOdd" [class.even]="isEven">
+
+  <div fxLayout="row">
+    <div fxFlex>
+      <h1 class="mat-headline">{{area.title}}</h1>
+    </div>
+  </div>
+
+  <div fxLayout="row">
+    <div fxFlex="66%">
+      <p class="mat-body-1">{{area.content}}</p>
+    </div>
+
+    <div fxFlex="33%">
+      <img style="max-width: 200px;" [src]="'/assets/images/' + area.img">
+    </div>
+  </div>
+
+</mat-card>
