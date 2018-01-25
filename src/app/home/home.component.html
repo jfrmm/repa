@@ -2,28 +2,50 @@
 
   <mat-grid-tile [colspan]="4" [rowspan]="2" [style.background]="introImage.color">
     <span>
-      <img [src]="introImage.path" height="100%">
+      <img class="intro-image" [src]="introImage.path">
     </span>
   </mat-grid-tile>
 
 </mat-grid-list>
 
-<mat-card *ngFor="let area of areas; index as i; let isOdd = odd; let isEven = even" [class.odd]="isOdd" [class.even]="isEven">
+<mat-card *ngFor="let area of areas; index as i; odd as isOdd; even as isEven">
 
-  <div fxLayout="row">
-    <div fxFlex>
-      <h1 class="mat-headline">{{area.title}}</h1>
+  <!-- odd row -->
+  <div *ngIf="isOdd;else even">
+    <div fxLayout="row">
+      <div fxFlex="66" fxLayoutAlign="center center">
+        <h1 class="mat-headline">{{area.title}}</h1>
+      </div>
+    </div>
+
+    <div fxLayout="row">
+      <div fxFlex="66">
+        <p class="mat-body-1">{{area.content}}</p>
+      </div>
+
+      <div fxFlex="33" fxLayoutAlign="end end">
+        <img style="max-width: 200px;" [src]="'/assets/images/' + area.img.path">
+      </div>
     </div>
   </div>
 
-  <div fxLayout="row">
-    <div fxFlex="66%">
-      <p class="mat-body-1">{{area.content}}</p>
+  <!-- even row -->
+  <ng-template #even>
+    <div fxLayout="row-reverse">
+      <div fxFlex="66" fxLayoutAlign="center center">
+        <h1 class="mat-headline">{{area.title}}</h1>
+      </div>
     </div>
 
-    <div fxFlex="33%">
-      <img style="max-width: 200px;" [src]="'/assets/images/' + area.img">
+    <div fxLayout="row-reverse">
+      <div fxFlex="66">
+        <p class="mat-body-1">{{area.content}}</p>
+      </div>
+
+      <div fxFlex="33">
+        <img style="max-width: 200px;" [src]="'/assets/images/' + area.img.path">
+      </div>
     </div>
-  </div>
+  </ng-template>
 
 </mat-card>
