@@ -11,6 +11,20 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   /**
+   * Links
+   *
+   * @var array
+   */
+  links = [
+    { url: 'canalizacao', label: 'Canalização' },
+    { url: 'electricidade', label: 'Electricidade' },
+    { url: 'gas', label: 'Gás' },
+    { url: 'estores', label: 'Estores' },
+    { url: 'electrodomesticos', label: 'Electrodomésticos' },
+    { url: 'contactos', label: 'Contactos' },
+  ]
+
+  /**
    * Variables concerning page scroll
    *
    * @var

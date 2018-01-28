@@ -1,5 +1,6 @@
 <mat-toolbar class="main-toolbar" [ngClass]="{'main-toolbar-scrolled': isScrolled}" color="primary">
   <div class="main-toolbar-innards" fxLayout="row">
+
     <div fxFlex>
       <span>
         <a mat-button routerLink="">REPA</a>
@@ -9,14 +10,23 @@
     <div fxFlex fxLayoutAlign="end end">
       <span>
         <div class="button-row">
-          <a mat-button routerLink="canalizacao">Canalização</a>
-          <a mat-button routerLink="electricade">Electricidade</a>
-          <a mat-button routerLink="gas">Gás</a>
-          <a mat-button routerLink="estores">Estores</a>
-          <a mat-button routerLink="electrodomesticos">Electrodomésticos</a>
-          <a mat-button routerLink="contacts">Contactos</a>
+
+          <div fxHide.xs fxHide.sm>
+            <a *ngFor="let link of links" mat-button [routerLink]="[link.url]">{{link.label}}</a>
+          </div>
+
+          <div fxShow.xs fxShow.sm fxHide="true">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <a *ngFor="let link of links" mat-menu-item [routerLink]="[link.url]">{{link.label}}</a>
+            </mat-menu>
+          </div>
+
         </div>
       </span>
     </div>
+
   </div>
 </mat-toolbar>
