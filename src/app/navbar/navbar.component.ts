@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { forEach } from '@angular/router/src/utils/collection';
+import { AreaService } from '../_services/area.service';
+import { Area } from '../_models/area';
 
 @Component({
   selector: 'app-navbar',
@@ -15,17 +18,17 @@ export class NavbarComponent implements OnInit {
    *
    * @var array
    */
-  links = [
-    { url: 'canalizacao', label: 'Canalização' },
-    { url: 'electricidade', label: 'Electricidade' },
-    { url: 'gas', label: 'Gás' },
-    { url: 'estores', label: 'Estores' },
-    { url: 'electrodomesticos', label: 'Electrodomésticos' },
-    { url: 'contactos', label: 'Contactos' },
-  ]
+  links = [];
 
   /**
-   * Variables concerning page scroll
+   * Areas
+   *
+   * @var Area[]
+   */
+  areas: Area[];
+
+  /**
+   * Page scroll
    *
    * @var
    */
@@ -34,9 +37,17 @@ export class NavbarComponent implements OnInit {
   startPos: Number = 0;
   changePos: Number = 50;
 
-  constructor() { }
+  constructor(private areaService: AreaService) { }
 
   ngOnInit() {
+    // Get the areas links
+    this.getAreas();
+
+    this.areas.forEach(element => {
+      this.links.push({ label: element.label, url: element.url });
+    });
+
+    this.links.push({ label: 'Contactos', url: 'contactos' });
   }
 
   /**
@@ -52,4 +63,10 @@ export class NavbarComponent implements OnInit {
       this.isScrolled = false;
     }
   }
+
+  getAreas(): void {
+    this.areaService.getAreas()
+      .subscribe(areas => this.areas = areas);
+  }
+
 }

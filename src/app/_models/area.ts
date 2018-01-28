@@ -1,5 +1,7 @@
 export class Area {
-  title: string;
+  id: string;
+  label: string;
+  url: string;
   content: string;
   img: {
     path: string;
