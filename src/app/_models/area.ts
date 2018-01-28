@@ -1,7 +1,9 @@
 export class Area {
-    title: string;
-    content: string;
-    img: string;
-    cols: number;
-    rows: number;
+  title: string;
+  content: string;
+  img: {
+    path: string;
+  };
+  cols: number;
+  rows: number;
 }

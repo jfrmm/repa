@@ -1,3 +1,9 @@
 .intro-image {
-  max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #464646;
+    min-height: 100vh;
+    margin: -8px;
+    margin-bottom: 0;
 }

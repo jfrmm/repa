@@ -1,9 +1,17 @@
-.main-toolbar .fill-remaining-space {
-    /* This fills the remaining space, by using flexbox.
-     Every toolbar row uses a flexbox row layout. */
-    flex: 1 1 auto;
+.main-toolbar {
+    background: transparent;
+    transition: background-color 0.25s ease-out;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    margin: 0 -8px;
+    z-index: 5;
 }
 
-.main-toolbar.transparent {
-    background: transparent;
+.main-toolbar-innards {
+    width: 100%;
+}
+
+.main-toolbar-scrolled {
+    background-color: black !important;
 }

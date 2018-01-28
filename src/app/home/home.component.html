@@ -1,17 +1,9 @@
-<mat-grid-list [cols]="grid.cols" [rowHeight]="grid.rowHeight">
-
-  <mat-grid-tile [colspan]="4" [rowspan]="2" [style.background]="introImage.color">
-    <span>
-      <img class="intro-image" [src]="introImage.path">
-    </span>
-  </mat-grid-tile>
-
-</mat-grid-list>
+<div class="intro-image" [style.background-image]="'url(' + introImage.path + ')'"></div>
 
 <mat-card *ngFor="let area of areas; index as i; odd as isOdd; even as isEven">
 
   <!-- odd row -->
-  <div *ngIf="isOdd;else even">
+  <div *ngIf="isOdd; else even">
     <div fxLayout="row">
       <div fxFlex="66" fxLayoutAlign="center center">
         <h1 class="mat-headline">{{area.title}}</h1>

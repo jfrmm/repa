@@ -1,14 +1,22 @@
-<mat-toolbar class="main-toolbar" color="primary">
-  <span>
-    <a mat-button routerLink="">REPA</a>
-  </span>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span>
-
-  <span>
-    <div class="button-row">
-      <a mat-button routerLink="contacts">CONTACTOS</a>
+<mat-toolbar class="main-toolbar" [ngClass]="{'main-toolbar-scrolled': isScrolled}" color="primary">
+  <div class="main-toolbar-innards" fxLayout="row">
+    <div fxFlex>
+      <span>
+        <a mat-button routerLink="">REPA</a>
+      </span>
     </div>
-  </span>
+
+    <div fxFlex fxLayoutAlign="end end">
+      <span>
+        <div class="button-row">
+          <a mat-button routerLink="canalizacao">Canalização</a>
+          <a mat-button routerLink="electricade">Electricidade</a>
+          <a mat-button routerLink="gas">Gás</a>
+          <a mat-button routerLink="estores">Estores</a>
+          <a mat-button routerLink="electrodomesticos">Electrodomésticos</a>
+          <a mat-button routerLink="contacts">Contactos</a>
+        </div>
+      </span>
+    </div>
+  </div>
 </mat-toolbar>
