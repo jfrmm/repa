@@ -2,11 +2,42 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
-## Development server
+* [Requirements](#requirements)
+* [Dependencies](#dependencies)
+* [Build](#build)
+* [Structure](#structure)
+* [Development tools](#development-tools)
+* [Pipes](#pipes)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirements
+- [NodeJS v6.11.*](https://nodejs.org/en/download/)
+- [NPM 5.6.*](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm)
 
-## Code scaffolding
+## Development
+
+Clone the project to your working space
+```
+git clone https://github.com/jfrmm/repa.git
+```
+
+The, install the dependencies, [Yarn](https://yarnpkg.com/en/docs/install) is recomended
+```
+yarn install
+```
+
+but NPM can also be used
+```
+npm install
+```
+
+Finally, launch the app
+```
+ng serve
+```
+
+It should be accessible through `http://localhost:4200`, and the app will reload as you make changes to the code
+
+### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 

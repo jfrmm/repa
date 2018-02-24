@@ -15,6 +15,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 
 // services
 import { AreaService } from './_services/area.service';
+import { DescriptionComponent } from './home/description/description.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AreaService } from './_services/area.service';
     HomeComponent,
     ContactsComponent,
     NavbarComponent,
+    DescriptionComponent,
   ],
   imports: [
     MaterialModule,
