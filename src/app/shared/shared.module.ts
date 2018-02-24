@@ -1,30 +1,29 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // the Angular Flex layout
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 // the Material components we're using
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   imports: [
-    FlexLayoutModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatGridListModule,
-    MatCardModule
+    //
   ],
   exports: [
+    CommonModule,
     FlexLayoutModule,
-    MatButtonModule,
-    MatToolbarModule,
     MatGridListModule,
-    MatCardModule
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule
   ],
+  declarations: [
+    //
+  ]
 })
-export class MaterialModule { }
+export class SharedModule { }

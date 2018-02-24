@@ -1,38 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// our module with Material parts
-import { MaterialModule } from './material.module';
+// our Shared module
+import { SharedModule } from './shared/shared.module';
 
-// our components
+// our Modules
+import { HomeModule } from './home/home.module';
+
+// our Components
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
-// services
-import { AreaService } from './_services/area.service';
-import { DescriptionComponent } from './home/description/description.component';
-
 @NgModule({
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    SharedModule,
+    HomeModule,
+  ],
+  exports: [
+    //
+  ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    ContactsComponent,
     NavbarComponent,
-    DescriptionComponent,
-  ],
-  imports: [
-    MaterialModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    ContactsComponent
   ],
   providers: [
-    AreaService
+    //
   ],
   bootstrap: [AppComponent]
 })
