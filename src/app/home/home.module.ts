@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { ScrollerComponent } from './scroller/scroller.component';
 import { DescriptionComponent } from './description/description.component';
 import { ServicesComponent } from './services/services.component';
+import { MapSocialComponent } from './map-social/map-social.component';
 
 // our Services
 import { AreaService } from '../_services/area.service';
@@ -22,7 +23,8 @@ import { AreaService } from '../_services/area.service';
     HomeComponent,
     ScrollerComponent,
     DescriptionComponent,
-    ServicesComponent
+    ServicesComponent,
+    MapSocialComponent
   ],
   providers: [
     AreaService
