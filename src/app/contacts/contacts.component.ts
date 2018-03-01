@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
   }
 
-  backToHome() {
-    this.router.navigate(['']);
+  public backToHome() {
+    this._router.navigate(['']);
     return false;
   }
 }

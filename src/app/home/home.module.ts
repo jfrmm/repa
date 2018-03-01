@@ -3,6 +3,7 @@ import { SharedModule } from '../shared/shared.module';
 
 // our home Components
 import { HomeComponent } from './home.component';
+import { ScrollerComponent } from './scroller/scroller.component';
 import { DescriptionComponent } from './description/description.component';
 import { ServicesComponent } from './services/services.component';
 
@@ -19,6 +20,7 @@ import { AreaService } from '../_services/area.service';
   ],
   declarations: [
     HomeComponent,
+    ScrollerComponent,
     DescriptionComponent,
     ServicesComponent
   ],

@@ -1,0 +1,11 @@
+.scroller {
+    margin-top: -64px;
+    height: 500px;
+}
+
+.scroller .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
