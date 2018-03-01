@@ -20,7 +20,12 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 4
 
-# Javascript and Typescript
-[*.{js,ts}]
+# Javascript, Typescript, HTML
+[*.{js,ts,html,htm}]
 indent_style = space
 indent_size = 2
+
+# CSS, SCSS
+[*.{css,scss}]
+indent_style = space
+indent_size = 4

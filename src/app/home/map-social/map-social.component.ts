@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-map-social',
-  templateUrl: './map-social.component.html',
-  styleUrls: ['./map-social.component.css']
+  selector: "app-map-social",
+  templateUrl: "./map-social.component.html",
+  styleUrls: ["./map-social.component.css"]
 })
 export class MapSocialComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

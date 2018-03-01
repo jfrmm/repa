@@ -2,37 +2,57 @@ import { Area } from '../_models/area';
 
 export const AREAS: Area[] = [
   {
-    title: 'Canalização',
+    id: 'canalizacao',
+    label: 'Canalização',
+    url: 'canalizacao',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, ex sit amet eleifend tempor, libero est commodo nunc, pharetra consectetur ligula massa nec lectus. Nunc a dictum tellus. Praesent vitae vulputate odio. Morbi et felis non justo aliquam suscipit ac ut odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at est dolor.',
-    img: 'jouni-rajala-374132.jpg',
+    img: {
+      path: 'jouni-rajala-374132.jpg'
+    },
     cols: 4,
     rows: 1
   },
   {
-    title: 'Electricidade',
+    id: 'electricidade',
+    label: 'Electricidade',
+    url: 'electricidade',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, ex sit amet eleifend tempor, libero est commodo nunc, pharetra consectetur ligula massa nec lectus. Nunc a dictum tellus. Praesent vitae vulputate odio. Morbi et felis non justo aliquam suscipit ac ut odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at est dolor.',
-    img: 'neven-krcmarek-424910.jpg',
+    img: {
+      path: 'neven-krcmarek-424910.jpg'
+    },
     cols: 4,
     rows: 1
   },
   {
-    title: 'Gás',
+    id: 'gas',
+    label: 'Gás',
+    url: 'gas',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, ex sit amet eleifend tempor, libero est commodo nunc, pharetra consectetur ligula massa nec lectus. Nunc a dictum tellus. Praesent vitae vulputate odio. Morbi et felis non justo aliquam suscipit ac ut odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at est dolor.',
-    img: 'chuttersnap-444536.jpg',
+    img: {
+      path: 'chuttersnap-444536.jpg'
+    },
     cols: 4,
     rows: 1
   },
   {
-    title: 'Estores',
+    id: 'estores',
+    label: 'Estores',
+    url: 'estores',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, ex sit amet eleifend tempor, libero est commodo nunc, pharetra consectetur ligula massa nec lectus. Nunc a dictum tellus. Praesent vitae vulputate odio. Morbi et felis non justo aliquam suscipit ac ut odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at est dolor.',
-    img: 'rktkn-109373.jpg',
+    img: {
+      path: 'rktkn-109373.jpg'
+    },
     cols: 4,
     rows: 1
   },
   {
-    title: 'Electrodomésticos',
+    id: 'electrodomesticos',
+    label: 'Electrodomésticos',
+    url:'electrodomesticos',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula, ex sit amet eleifend tempor, libero est commodo nunc, pharetra consectetur ligula massa nec lectus. Nunc a dictum tellus. Praesent vitae vulputate odio. Morbi et felis non justo aliquam suscipit ac ut odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at est dolor.',
-    img: 'dewang-gupta-464449.jpg',
+    img: {
+      path: 'dewang-gupta-464449.jpg'
+    },
     cols: 4,
     rows: 1
   }

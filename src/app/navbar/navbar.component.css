@@ -1,7 +1,7 @@
 .main-toolbar {
     z-index: 5;
     position: fixed;
-    top: 0
+    top: 0;
 }
 
 .main-toolbar .fill-remaining-space {
@@ -11,5 +11,5 @@
 }
 
 .main-toolbar.transparent {
-    background: transparent;
+    background-color: transparent;
 }

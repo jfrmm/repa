@@ -1,5 +1,31 @@
-# Repa
+# REPA
+A simple one page website.
 
+## Requirements
++ Node.js 8.9.4
++ NPM 5.6.0
+
+## Build for development
+
+### Clone
+Clone the code with
+```
+git clone https://github.com/jfrmm/repa.git YOUR_DESTINATION_FOLDER
+```
+
+### Install dependencies
+Run 
+```
+npm install
+```
+
+### Run
+Just run, you should have something to point to, like `http://localhost:4200`
+```
+ng serve
+```
+
+# Angular CLI references
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
 * [Requirements](#requirements)

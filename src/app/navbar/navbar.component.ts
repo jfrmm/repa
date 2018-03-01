@@ -1,15 +1,17 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { Router, NavigationStart } from '@angular/router';
-import { DOCUMENT } from '@angular/platform-browser';
-import { WINDOW } from '../_services/window.service';
+import { Component, OnInit, HostListener, Inject } from "@angular/core";
+import { Router, NavigationStart } from "@angular/router";
+import { DOCUMENT } from "@angular/platform-browser";
+import { WINDOW } from "../_services/window.service";
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: "app-navbar",
+  templateUrl: "./navbar.component.html",
+  styleUrls: ["./navbar.component.css"],
+  host: {
+    "(window:scroll)": "updateToolbar($event)"
+  }
 })
 export class NavbarComponent implements OnInit {
-
   /**
    * @type array
    */
@@ -30,8 +32,9 @@ export class NavbarComponent implements OnInit {
   constructor(
     private _router: Router,
     @Inject(DOCUMENT) private _document: Document,
-    @Inject(WINDOW) private _window) {
-    _router.events.forEach((event) => {
+    @Inject(WINDOW) private _window
+  ) {
+    _router.events.forEach(event => {
       if (event instanceof NavigationStart) {
         this.updateHome(event.url);
 
@@ -42,7 +45,11 @@ export class NavbarComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    this._windowScroll = this._window.pageYOffset || this._document.documentElement.scrollTop || this._document.body.scrollTop || 0;
+    this._windowScroll =
+      this._window.pageYOffset ||
+      this._document.documentElement.scrollTop ||
+      this._document.body.scrollTop ||
+      0;
 
     this.updateNavbar();
   }

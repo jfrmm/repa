@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-scroller',
-  templateUrl: './scroller.component.html',
-  styleUrls: ['./scroller.component.css']
+  selector: "app-scroller",
+  templateUrl: "./scroller.component.html",
+  styleUrls: ["./scroller.component.css"]
 })
 export class ScrollerComponent implements OnInit {
   /**
@@ -12,13 +12,11 @@ export class ScrollerComponent implements OnInit {
    * @type array
    */
   private _introImage = {
-    path: '/assets/images/hunter-haley-424256.jpg',
-    color: 'grey',
+    path: "/assets/images/hunter-haley-424256.jpg",
+    color: "grey"
   };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
