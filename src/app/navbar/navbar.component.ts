@@ -34,7 +34,6 @@ export class NavbarComponent implements OnInit {
     _router.events.forEach((event) => {
       if (event instanceof NavigationStart) {
         this.updateHome(event.url);
-        console.log('home ' + this._home + ' scroll ' + this._windowScroll);
 
         this.updateNavbar();
       }
@@ -50,7 +49,6 @@ export class NavbarComponent implements OnInit {
 
   public ngOnInit() {
     this.updateHome(this._router.url);
-    console.log('home ' + this._home + ' scroll ' + this._windowScroll);
 
     this.updateNavbar();
   }
@@ -61,7 +59,6 @@ export class NavbarComponent implements OnInit {
    * @param _url
    */
   public updateHome(_url) {
-    console.log('url ' + _url);
     if (_url === "/" || _url === "") {
       this._home = true;
     } else {
@@ -78,6 +75,5 @@ export class NavbarComponent implements OnInit {
     } else {
       this._navbar.transparent = false;
     }
-    console.log('navbar.transparent ' + this._navbar.transparent);
   }
 }
