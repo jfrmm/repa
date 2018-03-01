@@ -1,5 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WINDOW_PROVIDERS } from '../_services/window.service';
 
 // the Angular Flex layout
 import { FlexLayoutModule } from "@angular/flex-layout";
@@ -24,6 +25,9 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   declarations: [
     //
+  ],
+  providers: [
+    WINDOW_PROVIDERS
   ]
 })
 export class SharedModule { }

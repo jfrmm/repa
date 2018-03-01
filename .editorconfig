@@ -1,13 +1,26 @@
-# Editor configuration, see http://editorconfig.org
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
 root = true
 
 [*]
 charset = utf-8
 indent_style = space
-indent_size = 2
+end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+
+# PHP PSR-2 Coding Standards
+# http://www.php-fig.org/psr/psr-2/
+[*.php]
+indent_style = space
+indent_size = 4
+
+# Javascript and Typescript
+[*.{js,ts}]
+indent_style = space
+indent_size = 2
