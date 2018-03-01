@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScrollerComponent implements OnInit {
   /**
-   * The image that will be shown in the homepage
+   * The image that will be the background
    *
    * @type array
    */

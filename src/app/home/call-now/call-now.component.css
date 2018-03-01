@@ -1,10 +1,8 @@
-.scroller {
-    margin-top: -64px;
-    min-height: 500px;
-    height: 500px;
+.call-now {
+    height: 200px;
 }
 
-.scroller .background {
+.call-now .background {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

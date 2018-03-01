@@ -10,6 +10,7 @@ import { MapSocialComponent } from './map-social/map-social.component';
 
 // our Services
 import { AreaService } from '../_services/area.service';
+import { CallNowComponent } from './call-now/call-now.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { AreaService } from '../_services/area.service';
     ScrollerComponent,
     DescriptionComponent,
     ServicesComponent,
-    MapSocialComponent
+    MapSocialComponent,
+    CallNowComponent
   ],
   providers: [
     AreaService
