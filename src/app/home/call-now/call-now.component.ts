@@ -16,7 +16,7 @@ export class CallNowComponent implements OnInit {
     color: "brown"
   };
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

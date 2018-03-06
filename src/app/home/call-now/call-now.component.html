@@ -1,6 +1,19 @@
 <div class="home-content-block call-now" [style.background-color]="_introImage.color">
 
-  <div fxLayout="row" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
+  <div fxLayout="row" fxLayoutAlign="space-around center" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
+
+    <div fxFlex="50" class="left-block text-color-invert">
+      <h1 class="mat-headline">Reparações 24H</h1>
+      <h2 class="mat-title">orçamentos grátis</h2>
+    </div>
+
+    <div fxFlex="50" class="right-block text-color-invert">
+      <h2 class="mat-title text-color-invert">ligue já</h2>
+      <mat-chip-list>
+        <mat-chip color="primary">
+         965874514</mat-chip>
+      </mat-chip-list>
+    </div>
 
   </div>
 

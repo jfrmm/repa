@@ -8,3 +8,13 @@
     background-position: center center;
     height: 100%;
 }
+
+.call-now .left-block,
+.call-now .right-block {
+    text-align: center;
+}
+
+.call-now .left-block h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+}

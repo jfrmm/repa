@@ -1,4 +1,15 @@
-// Define a theme.
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// tipography
+$general-typography: mat-typography-config(
+    $font-family: 'Roboto, sans-serif'
+);
+
+@include mat-core($general-typography);
+
+// Define the theme.
 $theme-primary: mat-palette($mat-orange);
 $theme-accent : mat-palette($mat-grey, A200, A100, A400);
 $theme-warn : mat-palette($mat-red);
@@ -14,6 +25,14 @@ $accent: map-get($orange-theme, accent);
 $warn: map-get($orange-theme, warn);
 $background: map-get($orange-theme, background);
 $foreground: map-get($orange-theme, foreground);
+
+body {
+    font-family: mat-font-family($general-typography);
+}
+
+.text-color-invert {
+    color: mat-color($foreground, text) !important;
+}
 
 .mat-toolbar.mat-primary.main-toolbar.transparent {
     color: mat-color($foreground, text);
