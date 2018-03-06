@@ -18,7 +18,7 @@ $orange-theme : mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 // CUSTOM STYLING
 // When we need to access some variables (eg.: palette colors), this
 // is the place to do it. Below are the main theme properties for we
-// to use. The file node_modules/@angular/_theming.scss may help with
+// to use. The file node_modules/@angular/material/_theming.scss may help with
 // some of the available properties
 $primary: map-get($orange-theme, primary);
 $accent: map-get($orange-theme, accent);
@@ -30,8 +30,12 @@ body {
     font-family: mat-font-family($general-typography);
 }
 
-.text-color-invert {
+.color-invert {
     color: mat-color($foreground, text) !important;
+}
+
+.background-color-primary {
+    background-color: mat-color($primary) !important;
 }
 
 .mat-toolbar.mat-primary.main-toolbar.transparent {
