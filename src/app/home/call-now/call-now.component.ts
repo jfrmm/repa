@@ -7,8 +7,6 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CallNowComponent implements OnInit {
   /**
-   * The image that will be the background
-   *
    * @type array
    */
   private _introImage = {
