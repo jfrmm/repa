@@ -1,0 +1,34 @@
+.mail {
+    height: auto;
+}
+
+.mail h1 {
+    text-transform: uppercase;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.mail h2 {
+    margin: 12px 0;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.row .mat-form-field {
+    background-color: lightgrey;
+    margin: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+::ng-deep .row .mat-input-wrapper {
+    padding-bottom: 10px;
+}
+
+::ng-deep .row .mat-input-underline {
+    display: none;
+}
+

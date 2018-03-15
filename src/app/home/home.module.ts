@@ -12,6 +12,7 @@ import { MapSocialComponent } from "./map-social/map-social.component";
 import { AreaService } from "../_services/area.service";
 import { CallNowComponent } from "./call-now/call-now.component";
 import { FooterComponent } from './footer/footer.component';
+import { MailComponent } from './mail/mail.component';
 
 @NgModule({
   imports: [SharedModule],
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     ServicesComponent,
     MapSocialComponent,
     CallNowComponent,
-    FooterComponent
+    FooterComponent,
+    MailComponent
   ],
   providers: [AreaService]
 })
