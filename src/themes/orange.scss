@@ -34,10 +34,22 @@ body {
     color: mat-color($foreground, text) !important;
 }
 
+.color-secondary-text,
+.color-secondary-text .mat-form-field-label {
+    color: invert(mat-color($foreground, secondary-text)) !important;
+}
+
 .background-color-primary {
     background-color: mat-color($primary) !important;
 }
 
 .mat-toolbar.mat-primary.main-toolbar.transparent {
     color: mat-color($foreground, text);
+}
+
+button:disabled,
+button.mat-button:disabled,
+button.mat-raised-button:disabled {
+    background-color: invert(mat-color($background, disabled-button)) !important;
+    color: mat-color($foreground, text) !important;
 }

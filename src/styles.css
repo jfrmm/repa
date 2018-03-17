@@ -38,3 +38,9 @@ h5 {
 h6 {
     font-size: 1em;
 }
+
+button,
+button.mat-button,
+button.mat-raised-button {
+    text-transform: uppercase;
+}

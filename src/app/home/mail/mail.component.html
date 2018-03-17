@@ -3,40 +3,68 @@
   <h1>Contacte-nos</h1>
   <h2>orçamentos grátis</h2>
 
-  <div fxLayout="column" fxLayoutAlign="space-around center">
+  <div class="form">
+    <form [formGroup]="mailForm" novalidate>
+      <div fxLayout="column" fxLayoutAlign="space-around center">
 
-    <div fxLayout="row" fxLayoutAlign="center center" class="row">
-      <div fxFlex="66">
-        <mat-form-field [floatLabel]="form.options.floatLabel">
-          <input matInput placeholder="Nome">
-        </mat-form-field>
+        <div fxLayout="row" fxLayoutAlign="center center" class="row">
+          <div fxFlex="66">
+            <div class="form-field">
+              <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
+                <input matInput formControlName="name" placeholder="Nome" required>
+
+                <mat-error *ngIf="formControls.name.hasError('required')">Nome é obrigatório</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center center" class="row">
+          <div fxFlex="66">
+            <div class="form-field">
+              <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
+                <input matInput formControlName="subject" placeholder="Assunto" required>
+
+                <mat-error *ngIf="formControls.subject.hasError('required')">Assunto é obrigatório</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center center" class="row">
+          <div fxFlex="66">
+            <div class="form-field">
+              <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
+                <input matInput formControlName="place" placeholder="Localização" required>
+
+                <mat-error *ngIf="formControls.place.hasError('required')">Localização é obrigatório</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center center" class="row">
+          <div fxFlex="66">
+            <div class="form-field">
+              <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
+                <textarea matInput formControlName="body" placeholder="Mensagem" rows="5" required></textarea>
+
+                <mat-error *ngIf="formControls.body.hasError('required')">Mensagem é obrigatório</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center center" class="row">
+          <div fxFlex="66">
+            <div class="form-buttons" align="end">
+              <button mat-raised-button color="primary" (click)="sendMail()" [disabled]="!mailForm.valid">Enviar</button>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-
-    <div fxLayout="row" fxLayoutAlign="center center" class="row">
-      <div fxFlex="66">
-        <mat-form-field [floatLabel]="form.options.floatLabel">
-          <input matInput placeholder="Email">
-        </mat-form-field>
-      </div>
-    </div>
-
-    <div fxLayout="row" fxLayoutAlign="center center" class="row">
-      <div fxFlex="66">
-        <mat-form-field [floatLabel]="form.options.floatLabel">
-          <input matInput placeholder="Assunto">
-        </mat-form-field>
-      </div>
-    </div>
-
-    <div fxLayout="row" fxLayoutAlign="center center" class="row">
-      <div fxFlex="66">
-        <mat-form-field [floatLabel]="form.options.floatLabel">
-          <textarea matInput placeholder="Mensagem"></textarea>
-        </mat-form-field>
-      </div>
-    </div>
-
+    </form>
   </div>
 
 </div>
