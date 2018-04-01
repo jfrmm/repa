@@ -16,9 +16,11 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 
+import { SlickModule } from 'ngx-slick';
+
 @NgModule({
   imports: [
-    //
+    SlickModule.forRoot()
   ],
   exports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { MatInputModule } from "@angular/material/input";
     MatChipsModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    SlickModule
   ],
   declarations: [
     //
