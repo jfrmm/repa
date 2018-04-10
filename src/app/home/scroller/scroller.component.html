@@ -2,17 +2,18 @@
 
   <div fxLayout="row" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
 
-    <div id="carousel">
-      <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%">
-        </div>
-      </ngx-slick>
+    <div class="carousel">
+      <ngx-carousel
+      [inputs]="carouselTile"
+      (carouselLoad)="carouselTileLoad($event)">
 
-      <button (click)="addSlide()">Add</button>
-      <button (click)="removeSlide()">Remove</button>
-      <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-      <button (click)="slickModal.unslick()">unslick</button>
+            <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                <h1>{{Tile + 1}}</h1>
+            </ngx-tile>
+
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
     </div>
 
   </div>

@@ -16,11 +16,12 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 
-import { SlickModule } from 'ngx-slick';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 @NgModule({
   imports: [
-    SlickModule.forRoot()
+    NgxCarouselModule
   ],
   exports: [
     CommonModule,
@@ -35,7 +36,7 @@ import { SlickModule } from 'ngx-slick';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    SlickModule
+    NgxCarouselModule
   ],
   declarations: [
     //
