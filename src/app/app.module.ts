@@ -13,6 +13,7 @@ import { HomeModule } from "./home/home.module";
 // our Components
 import { NavbarComponent } from "./navbar/navbar.component";
 import { ContactsComponent } from "./contacts/contacts.component";
+import { GotoTopComponent } from './goto-top/goto-top.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { ContactsComponent } from "./contacts/contacts.component";
   exports: [
     //
   ],
-  declarations: [AppComponent, NavbarComponent, ContactsComponent],
+  declarations: [AppComponent, NavbarComponent, ContactsComponent, GotoTopComponent],
   providers: [
     //
   ],
