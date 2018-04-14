@@ -16,13 +16,12 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 
-import { NgxCarouselModule } from 'ngx-carousel';
-import 'hammerjs';
+import { NgxCarouselModule } from "ngx-carousel";
+import "hammerjs";
+import { Ng2PageScrollModule } from "ng2-page-scroll";
 
 @NgModule({
-  imports: [
-    NgxCarouselModule
-  ],
+  imports: [NgxCarouselModule, Ng2PageScrollModule],
   exports: [
     CommonModule,
     FlexLayoutModule,
@@ -36,7 +35,8 @@ import 'hammerjs';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    NgxCarouselModule
+    NgxCarouselModule,
+    Ng2PageScrollModule
   ],
   declarations: [
     //
