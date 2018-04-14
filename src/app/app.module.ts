@@ -1,29 +1,35 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
 
-import { AppRoutingModule } from './app-routing.module';
+// our Shared module
+import { SharedModule } from "./shared/shared.module";
 
-import { AppComponent } from './app.component';
+// our Modules
+import { HomeModule } from "./home/home.module";
 
-// our module with Material parts
-import { MaterialModule } from './material.module';
-import { HomeComponent } from './home/home.component';
-import { ContactsComponent } from './contacts/contacts.component';
+// our Components
+import { NavbarComponent } from "./navbar/navbar.component";
+import { ContactsComponent } from "./contacts/contacts.component";
+import { GotoTopComponent } from './goto-top/goto-top.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ContactsComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    AppRoutingModule,
+    SharedModule,
+    HomeModule
   ],
-  providers: [],
+  exports: [
+    //
+  ],
+  declarations: [AppComponent, NavbarComponent, ContactsComponent, GotoTopComponent],
+  providers: [
+    //
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

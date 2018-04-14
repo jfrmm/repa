@@ -1,0 +1,16 @@
+.footer {
+    height: 200px;
+}
+
+.footer .background {
+    height: 100%;
+}
+
+.footer .left-block,
+.footer .right-block {
+    text-align: center;
+}
+
+.footer h1 {
+    text-transform: uppercase;
+}

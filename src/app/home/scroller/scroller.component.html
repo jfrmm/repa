@@ -1,0 +1,30 @@
+<div class="home-content-block scroller" [style.background-color]="_introImage.color">
+
+  <div fxLayout="row" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
+
+    <div class="carousel">
+      <ngx-carousel [inputs]="carouselTile">
+
+        <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems">
+          <h1 class="color-invert">{{tile.title}}</h1>
+          <h3 class="color-invert">{{tile.subTitle}}</h3>
+
+          <mat-chip-list>
+            <mat-chip class="background-color-primary" disabled>
+              {{tile.chip}}
+            </mat-chip>
+          </mat-chip-list>
+        </ngx-tile>
+
+        <button NgxCarouselPrev class='leftRs'>
+          <mat-icon class="color-invert">keyboard_arrow_left</mat-icon>
+        </button>
+        <button NgxCarouselNext class='rightRs'>
+          <mat-icon class="color-invert">keyboard_arrow_right</mat-icon>
+        </button>
+      </ngx-carousel>
+    </div>
+
+  </div>
+
+</div>

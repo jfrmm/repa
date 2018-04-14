@@ -1,0 +1,15 @@
+.main-toolbar {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+}
+
+.main-toolbar .fill-remaining-space {
+    /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
+
+.main-toolbar.transparent {
+    background-color: transparent;
+}

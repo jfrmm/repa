@@ -1,0 +1,11 @@
+.map-social {
+    height: 400px;
+}
+
+.map-social .left-block {
+    background-color: lightgrey;
+}
+
+.map-social .right-block {
+    background-color: yellow;
+}

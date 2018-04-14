@@ -1,0 +1,11 @@
+.description {
+    height: 400px;
+}
+
+.description .left-block {
+    background-color: lightgrey;
+}
+
+.description .right-block {
+    background-color: yellow;
+}

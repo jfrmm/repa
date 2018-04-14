@@ -1,0 +1,27 @@
+.services {
+    background: url(/assets/images/igor-ovsyannykov-252351-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+}
+
+.card .mat-card {
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+}
+
+.card .mat-card-image {
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.card .mat-card-title {
+    border-bottom: 2px solid;
+}

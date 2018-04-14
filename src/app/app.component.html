@@ -1,10 +1,7 @@
-<mat-toolbar color="primary">
-  <span>Repa</span>
+<app-navbar></app-navbar>
 
-  <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span>
+<div class="container">
+  <router-outlet></router-outlet>
 
-  <span><a routerLink="contacts">Contactos</a></span>
-</mat-toolbar>
-
-<router-outlet></router-outlet>
+  <app-goto-top></app-goto-top>
+</div>

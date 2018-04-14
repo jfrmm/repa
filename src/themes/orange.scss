@@ -1,0 +1,55 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// tipography
+$general-typography: mat-typography-config(
+    $font-family: 'Roboto, sans-serif'
+);
+
+@include mat-core($general-typography);
+
+// Define the theme.
+$theme-primary: mat-palette($mat-orange);
+$theme-accent : mat-palette($mat-grey, A200, A100, A400);
+$theme-warn : mat-palette($mat-red);
+$orange-theme : mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
+
+// CUSTOM STYLING
+// When we need to access some variables (eg.: palette colors), this
+// is the place to do it. Below are the main theme properties for we
+// to use. The file node_modules/@angular/material/_theming.scss may help with
+// some of the available properties
+$primary: map-get($orange-theme, primary);
+$accent: map-get($orange-theme, accent);
+$warn: map-get($orange-theme, warn);
+$background: map-get($orange-theme, background);
+$foreground: map-get($orange-theme, foreground);
+
+body {
+    font-family: mat-font-family($general-typography);
+}
+
+.color-invert {
+    color: mat-color($foreground, text) !important;
+}
+
+.color-secondary-text,
+.color-secondary-text .mat-form-field-label {
+    color: invert(mat-color($foreground, secondary-text)) !important;
+}
+
+.background-color-primary {
+    background-color: mat-color($primary) !important;
+}
+
+.mat-toolbar.mat-primary.main-toolbar.transparent {
+    color: mat-color($foreground, text);
+}
+
+button:disabled,
+button.mat-button:disabled,
+button.mat-raised-button:disabled {
+    background-color: invert(mat-color($background, disabled-button)) !important;
+    color: mat-color($foreground, text) !important;
+}

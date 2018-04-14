@@ -1,0 +1,14 @@
+<mat-toolbar class="main-toolbar" color="primary" [class.transparent]="_navbar.transparent">
+  <span>
+    <a mat-button routerLink="">REPA</a>
+  </span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+
+  <span>
+    <div class="button-row">
+      <a *ngFor="let link of _links" mat-button pageScroll href="{{link.url}}">{{link.name}}</a>
+    </div>
+  </span>
+</mat-toolbar>
