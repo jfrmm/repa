@@ -3,17 +3,20 @@
   <div fxLayout="row" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
 
     <div class="carousel">
-      <ngx-carousel
-      [inputs]="carouselTile"
-      (carouselLoad)="carouselTileLoad($event)">
+      <ngx-carousel [inputs]="carouselTile">
 
-            <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
-                <h1>{{Tile + 1}}</h1>
-            </ngx-tile>
+        <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems">
+          <h1 class="color-invert">{{tile.title}}</h1>
+          <h3 class="color-invert">{{tile.subTitle}}</h3>
+        </ngx-tile>
 
-          <button NgxCarouselPrev class='leftRs'>&lt;</button>
-          <button NgxCarouselNext class='rightRs'>&gt;</button>
-    </ngx-carousel>
+        <button NgxCarouselPrev class='leftRs'>
+          <mat-icon class="color-invert">keyboard_arrow_left</mat-icon>
+        </button>
+        <button NgxCarouselNext class='rightRs'>
+          <mat-icon class="color-invert">keyboard_arrow_right</mat-icon>
+        </button>
+      </ngx-carousel>
     </div>
 
   </div>
