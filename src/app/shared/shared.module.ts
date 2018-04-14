@@ -16,9 +16,12 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
+
 @NgModule({
   imports: [
-    //
+    NgxCarouselModule
   ],
   exports: [
     CommonModule,
@@ -32,7 +35,8 @@ import { MatInputModule } from "@angular/material/input";
     MatChipsModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgxCarouselModule
   ],
   declarations: [
     //
