@@ -8,7 +8,7 @@
 
   <span>
     <div class="button-row">
-      <a mat-button routerLink="contacts">CONTACTOS</a>
+      <a *ngFor="let link of _links" mat-button pageScroll href="{{link.url}}">{{link.name}}</a>
     </div>
   </span>
 </mat-toolbar>
