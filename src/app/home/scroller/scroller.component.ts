@@ -26,15 +26,18 @@ export class ScrollerComponent implements OnInit {
     this.carouselTileItems = [
       {
         title: "Vidros partidos?",
-        subTitle: "janelas novas em 24 horas"
+        subTitle: "janelas novas em 24 horas",
+        chip: "orçamentos grátis"
       },
       {
         title: "Estores bloqueados?",
-        subTitle: "Reparamos estores em 24 horas"
+        subTitle: "Reparamos estores em 24 horas",
+        chip: "orçamentos grátis"
       },
       {
         title: "Esgotos entupidos?",
-        subTitle: "Orçamentamos em 24 horas"
+        subTitle: "Orçamentamos em 24 horas",
+        chip: "orçamentos grátis"
       }
     ];
 
@@ -42,7 +45,7 @@ export class ScrollerComponent implements OnInit {
       grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
       slide: 1,
       speed: 250,
-      interval: 3000,
+      interval: 53000,
       animation: "lazy",
       point: {
         visible: true
