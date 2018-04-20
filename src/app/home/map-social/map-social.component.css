@@ -2,10 +2,16 @@
     height: 400px;
 }
 
+.map-social.fxClass-xs {
+    height: auto;
+}
+
 .map-social .left-block {
     background-color: lightgrey;
+    height: 400px;
 }
 
 .map-social .right-block {
     background-color: yellow;
+    height: 400px;
 }
