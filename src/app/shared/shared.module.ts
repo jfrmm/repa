@@ -15,6 +15,7 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { MatMenuModule } from "@angular/material/menu";
 
 import { NgxCarouselModule } from "ngx-carousel";
 import "hammerjs";
@@ -36,6 +37,7 @@ import { GoTopButtonModule } from "ng2-go-top-button";
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    MatMenuModule,
     NgxCarouselModule,
     NgxPageScrollModule,
     GoTopButtonModule
