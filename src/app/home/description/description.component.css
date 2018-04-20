@@ -2,8 +2,13 @@
     height: 400px;
 }
 
+.description.fxClass-xs {
+    height: auto;
+}
+
 .description .left-block {
     background-color: lightgrey;
+    height: 400px;
 }
 
 .description .right-block {

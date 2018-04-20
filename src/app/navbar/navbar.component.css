@@ -13,3 +13,7 @@
 .main-toolbar.transparent {
     background-color: transparent;
 }
+
+.mat-menu-item {
+    text-transform: uppercase;
+}

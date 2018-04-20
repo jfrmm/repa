@@ -8,7 +8,7 @@
       <div fxLayout="column" fxLayoutAlign="space-around center">
 
         <div fxLayout="row" fxLayoutAlign="center center" class="row">
-          <div fxFlex="66">
+          <div fxFlex="90" fxFlex.gt-xs="66">
             <div class="form-field">
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <input matInput formControlName="name" placeholder="Nome" required>
@@ -20,7 +20,7 @@
         </div>
 
         <div fxLayout="row" fxLayoutAlign="center center" class="row">
-          <div fxFlex="66">
+          <div fxFlex="90" fxFlex.gt-xs="66">
             <div class="form-field">
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <input matInput formControlName="subject" placeholder="Assunto" required>
@@ -32,7 +32,7 @@
         </div>
 
         <div fxLayout="row" fxLayoutAlign="center center" class="row">
-          <div fxFlex="66">
+          <div fxFlex="90" fxFlex.gt-xs="66">
             <div class="form-field">
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <input matInput formControlName="place" placeholder="Localização" required>
@@ -44,7 +44,7 @@
         </div>
 
         <div fxLayout="row" fxLayoutAlign="center center" class="row">
-          <div fxFlex="66">
+          <div fxFlex="90" fxFlex.gt-xs="66">
             <div class="form-field">
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <textarea matInput formControlName="body" placeholder="Mensagem" rows="5" required></textarea>
@@ -56,7 +56,7 @@
         </div>
 
         <div fxLayout="row" fxLayoutAlign="center center" class="row">
-          <div fxFlex="66">
+          <div fxFlex="90" fxFlex.gt-xs="66">
             <div class="form-buttons" align="end">
               <button mat-raised-button color="primary" (click)="sendMail()" [disabled]="!mailForm.valid">Enviar</button>
             </div>
