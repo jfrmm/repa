@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener, Inject } from "@angular/core";
 import { Router, NavigationStart } from "@angular/router";
 import { DOCUMENT } from "@angular/platform-browser";
 import { WINDOW } from "../_services/window.service";
-import { PageScrollConfig } from "ng2-page-scroll";
+import { PageScrollConfig } from "ngx-page-scroll";
 
 @Component({
   selector: "app-navbar",

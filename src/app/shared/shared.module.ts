@@ -18,11 +18,11 @@ import { MatInputModule } from "@angular/material/input";
 
 import { NgxCarouselModule } from "ngx-carousel";
 import "hammerjs";
-import { Ng2PageScrollModule } from "ng2-page-scroll";
+import { NgxPageScrollModule } from "ngx-page-scroll";
 import { GoTopButtonModule } from "ng2-go-top-button";
 
 @NgModule({
-  imports: [NgxCarouselModule, Ng2PageScrollModule, GoTopButtonModule],
+  imports: [NgxCarouselModule, NgxPageScrollModule, GoTopButtonModule],
   exports: [
     CommonModule,
     FlexLayoutModule,
@@ -37,7 +37,7 @@ import { GoTopButtonModule } from "ng2-go-top-button";
     MatFormFieldModule,
     MatInputModule,
     NgxCarouselModule,
-    Ng2PageScrollModule,
+    NgxPageScrollModule,
     GoTopButtonModule
   ],
   declarations: [
