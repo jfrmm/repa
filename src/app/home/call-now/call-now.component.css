@@ -2,6 +2,10 @@
     height: 200px;
 }
 
+.call-now.fxClass-xs {
+    height: auto;
+}
+
 .call-now .background {
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,9 +13,9 @@
     height: 100%;
 }
 
-
 .call-now .left-block,
 .call-now .right-block {
+    height: 200px;
     text-align: center;
 }
 

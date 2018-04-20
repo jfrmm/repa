@@ -1,8 +1,8 @@
-<div class="home-content-block scroller" [style.background-color]="_introImage.color">
+<div class="home-content-block scroller" ngClass.xs="fxClass-xs" [style.background-color]="_introImage.color">
 
   <div fxLayout="row" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
 
-    <div class="carousel">
+    <div fxFlex="100" class="carousel">
       <ngx-carousel [inputs]="carouselTile">
 
         <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems">
@@ -22,6 +22,7 @@
         <button NgxCarouselNext class='rightRs'>
           <mat-icon class="color-invert">keyboard_arrow_right</mat-icon>
         </button>
+
       </ngx-carousel>
     </div>
 

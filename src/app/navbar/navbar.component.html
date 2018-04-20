@@ -6,9 +6,20 @@
   <!-- This fills the remaining space of the current row -->
   <span class="fill-remaining-space"></span>
 
+  <!-- Our navigation links -->
   <span>
-    <div class="button-row">
+    <div fxLayout="row" fxShow="false" fxShow.gt-xs class="button-row">
       <a *ngFor="let link of _links" mat-button pageScroll href="{{link.url}}">{{link.name}}</a>
     </div>
+
+    <button mat-icon-button [matMenuTriggerFor]="appMenu" fxHide="false" fxHide.gt-xs>
+      <mat-icon>more_vert</mat-icon>
+    </button>
   </span>
+
 </mat-toolbar>
+
+<!-- Our navigation links, in a menu for mobile -->
+<mat-menu #appMenu="matMenu">
+  <a *ngFor="let link of _links" mat-menu-item pageScroll href="{{link.url}}">{{link.name}}</a>
+</mat-menu>

@@ -1,11 +1,15 @@
-<div fxLayout="row" id="comp-map-social" class="home-content-block map-social">
+<div id="comp-map-social" class="home-content-block map-social" ngClass.xs="fxClass-xs">
 
-  <div fxFlex="50" class="left-block">
-    <h1>Map</h1>
-  </div>
+  <div fxLayout="column" fxLayout.gt-xs="row">
 
-  <div fxFlex="50" class="right-block">
-    <h1>Social</h1>
+    <div fxFlex.xs="100" fxFlex.gt-xs="50" class="left-block">
+      <h1>Map</h1>
+    </div>
+
+    <div fxFlex.xs="100" fxFlex.gt-xs="50" class="right-block">
+      <h1>Social</h1>
+    </div>
+
   </div>
 
 </div>
