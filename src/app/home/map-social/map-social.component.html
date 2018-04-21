@@ -1,15 +1,16 @@
 <div id="comp-map-social" class="home-content-block map-social" ngClass.xs="fxClass-xs">
 
-  <div fxLayout="column" fxLayout.gt-xs="row">
+  <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="space-around center">
 
-    <div fxFlex.xs="100" fxFlex.gt-xs="50" class="left-block">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="left-block">
       <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
         <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
       </agm-map>
     </div>
 
-    <div fxFlex.xs="100" fxFlex.gt-xs="50" class="right-block">
-      <h1>Social</h1>
+    <div fxFlex="100" fxFlex.gt-xs="50" class="right-block">
+      <h1 class="color-invert">Grande Lisboa</h1>
+      <h3 class="color-invert">trabalhamos em toda a Área Metropolitana de Lisboa</h3>
     </div>
 
   </div>
