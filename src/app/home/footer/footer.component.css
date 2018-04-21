@@ -1,5 +1,6 @@
 .footer {
-    height: 200px;
+    /* height: 200px; */
+    padding: 32px;
 }
 
 .footer.fxClass-xs {
@@ -17,4 +18,8 @@
 
 .footer h1 {
     text-transform: uppercase;
+}
+
+.footer .left-block img {
+    width: 80%;
 }
