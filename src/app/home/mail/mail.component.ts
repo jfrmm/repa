@@ -30,9 +30,9 @@ export class MailComponent implements OnInit {
    * @type array
    */
   private _background = {
-    path: '/assets/images/fundo_padrao_formulario.jpg',
-    color: 'white'
-  }
+    path: "/assets/images/fundo_padrao_formulario.jpg",
+    color: "white"
+  };
 
   get formControls() {
     return this.mailForm.controls;
@@ -53,8 +53,6 @@ export class MailComponent implements OnInit {
     });
   }
 
-  // get name() { return this.mailForm.get('name'); }
-
   public sendMail() {
     // let fc = this.formControls
     let email = {
@@ -66,11 +64,11 @@ export class MailComponent implements OnInit {
     };
 
     email.body =
-      "[Contacto pelo site de " +
+      "[Contacto REPA: " +
       email.name +
-      ", localização " +
+      " de " +
       email.place +
-      "]\n" +
+      "]\r\n" +
       email.body;
 
     window.location.href =

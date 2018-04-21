@@ -9,13 +9,6 @@ export class FooterComponent implements OnInit {
   /**
    * @type array
    */
-  private _introImage = {
-    color: "grey"
-  };
-
-  /**
-   * @type array
-   */
   private _leftImage = {
     path: "/assets/icons/logo_2.png"
   };
