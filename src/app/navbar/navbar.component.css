@@ -21,3 +21,7 @@
 .main-toolbar .logo img {
     width: 80px;
 }
+
+.main-toolbar {
+    transition: background 0.25s ease;
+}

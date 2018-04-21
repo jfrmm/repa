@@ -18,7 +18,8 @@ export class NavbarComponent implements OnInit {
    */
   private _navbar = {
     transparent: false,
-    logoImage: '/assets/icons/logo.png'
+    logoImage: "/assets/icons/logo.png",
+    height: 64
   };
 
   /**
@@ -44,7 +45,7 @@ export class NavbarComponent implements OnInit {
     /**
      * PageScroll configuration
      */
-    PageScrollConfig.defaultScrollOffset = 64;
+    PageScrollConfig.defaultScrollOffset = this._navbar.height - 1;
     PageScrollConfig.defaultDuration = 250;
     PageScrollConfig.defaultEasingLogic = {
       ease: (t: number, b: number, c: number, d: number): number => {
@@ -125,7 +126,7 @@ export class NavbarComponent implements OnInit {
    * Update the navbar as fit
    */
   public updateNavbar() {
-    if (this._home && this._windowScroll < 250) {
+    if (this._home && this._windowScroll < this._navbar.height) {
       this._navbar.transparent = true;
     } else {
       this._navbar.transparent = false;
