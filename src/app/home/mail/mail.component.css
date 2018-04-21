@@ -1,5 +1,9 @@
 .mail {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: auto;
+    padding: 32px 0;
 }
 
 .mail h1 {
@@ -40,7 +44,7 @@
 }
 
 .form {
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .form-buttons {

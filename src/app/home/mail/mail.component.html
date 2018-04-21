@@ -1,4 +1,4 @@
-<div class="home-content-block mail">
+<div class="home-content-block mail" [style.background-image]="'url(' + _background.path + ')'" [style.background-color]="_background.color">
 
   <h1>Contacte-nos</h1>
   <h2>orçamentos grátis</h2>
@@ -13,7 +13,7 @@
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <input matInput formControlName="name" placeholder="Nome" required>
 
-                <mat-error *ngIf="formControls.name.hasError('required')">Nome é obrigatório</mat-error>
+                <mat-error *ngIf="formControls.name.hasError('required')">O campo "Nome" é obrigatório</mat-error>
               </mat-form-field>
             </div>
           </div>
@@ -25,7 +25,7 @@
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <input matInput formControlName="subject" placeholder="Assunto" required>
 
-                <mat-error *ngIf="formControls.subject.hasError('required')">Assunto é obrigatório</mat-error>
+                <mat-error *ngIf="formControls.subject.hasError('required')">O campo "Assunto" é obrigatório</mat-error>
               </mat-form-field>
             </div>
           </div>
@@ -37,7 +37,7 @@
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <input matInput formControlName="place" placeholder="Localização" required>
 
-                <mat-error *ngIf="formControls.place.hasError('required')">Localização é obrigatório</mat-error>
+                <mat-error *ngIf="formControls.place.hasError('required')">O campo "Localização" é obrigatório</mat-error>
               </mat-form-field>
             </div>
           </div>
@@ -49,7 +49,7 @@
               <mat-form-field class="color-secondary-text" [floatLabel]="form.options.floatLabel">
                 <textarea matInput formControlName="body" placeholder="Mensagem" rows="5" required></textarea>
 
-                <mat-error *ngIf="formControls.body.hasError('required')">Mensagem é obrigatório</mat-error>
+                <mat-error *ngIf="formControls.body.hasError('required')">O campo "Mensagem" é obrigatório</mat-error>
               </mat-form-field>
             </div>
           </div>

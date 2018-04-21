@@ -17,11 +17,22 @@ export class MailComponent implements OnInit {
    */
   public mailForm: FormGroup;
 
-  form = {
+  /**
+   * @type array
+   */
+  public form = {
     options: {
       floatLabel: "never"
     }
   };
+
+  /**
+   * @type array
+   */
+  private _background = {
+    path: '/assets/images/fundo_padrao_formulario.jpg',
+    color: 'white'
+  }
 
   get formControls() {
     return this.mailForm.controls;
