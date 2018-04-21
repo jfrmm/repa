@@ -2,21 +2,22 @@
 
   <div fxLayout="column" fxLayout.gt-xs="row">
 
-    <div fxFlex.xs="100" fxFlex.gt-xs="50" class="left-block">
-      <h1>LOGO</h1>
+    <div fxFlex.xs="100" fxFlex.gt-xs="50" class="left-block" [style.background-image]="'url(' + _leftImage.path + ')'" [style.background-color]="_leftImage.color">
     </div>
 
     <div fxFlex.xs="100" fxFlex.gt-xs="50" class="right-block">
-      <h1>REPA</h1>
+      <img src="{{_rightImage.path}}">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus arcu sed risus imperdiet sagittis. Praesent
-        tincidunt nec nunc quis bibendum. Fusce vehicula malesuada mauris nec semper. Curabitur nisl mi, ornare ut magna
-        a, pharetra porta dolor.
+      <p>A REPA é uma empresa especializada em todo o tipo de reparações e instalações em residências, prédios, condomínios
+        e lojas.
       </p>
+
       <p>
-        Duis interdum velit vel tellus iaculis finibus. Maecenas tincidunt et sapien viverra pulvinar. Cras porttitor dignissim magna
-        tincidunt ullamcorper. Nunc dolor enim, bibendum a tellus et, placerat hendrerit arcu. Nunc ligula sapien, maximus
-        in feugiat et, pharetra vitae ante. Morbi nec porttitor dui.
+        Prestamos uma grande variedade de serviços, garantindo qualidade de trabalhos e acabamentos em apenas 24h.
+      </p>
+
+      <p>Trabalhamos apenas com profissionais qualificados, de forma a satisfazer as necessidades dos nossos clientes nas mais
+        variadas vertentes.
       </p>
     </div>
 

@@ -17,3 +17,7 @@
 .mat-menu-item {
     text-transform: uppercase;
 }
+
+.main-toolbar .logo img {
+    width: 80px;
+}

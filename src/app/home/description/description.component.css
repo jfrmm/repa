@@ -7,10 +7,24 @@
 }
 
 .description .left-block {
-    background-color: lightgrey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 400px;
 }
 
 .description .right-block {
-    background-color: yellow;
+    background-color: #f3b24c;
+    padding: 32px;
+    text-align: center;
+}
+
+.description .right-block img {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 80%;
+}
+
+.description .right-block p {
+    text-align: left;
 }

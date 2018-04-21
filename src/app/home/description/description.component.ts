@@ -6,6 +6,21 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./description.component.css"]
 })
 export class DescriptionComponent implements OnInit {
+  /**
+   * @type array
+   */
+  private _leftImage = {
+    path: "/assets/images/fundo_padrao_1.jpg",
+    color: "white"
+  };
+
+  /**
+   * @type array
+   */
+  private _rightImage = {
+    path: "/assets/images/logo_2.png"
+  }
+
   constructor() {}
 
   ngOnInit() {}
