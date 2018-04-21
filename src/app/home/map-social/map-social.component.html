@@ -3,7 +3,9 @@
   <div fxLayout="column" fxLayout.gt-xs="row">
 
     <div fxFlex.xs="100" fxFlex.gt-xs="50" class="left-block">
-      <h1>Map</h1>
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
     </div>
 
     <div fxFlex.xs="100" fxFlex.gt-xs="50" class="right-block">

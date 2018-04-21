@@ -11,6 +11,10 @@
     height: 400px;
 }
 
+agm-map {
+    height: 400px;
+}
+
 .map-social .right-block {
     background-color: yellow;
     height: 400px;

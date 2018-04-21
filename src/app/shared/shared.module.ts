@@ -21,9 +21,17 @@ import { NgxCarouselModule } from "ngx-carousel";
 import "hammerjs";
 import { NgxPageScrollModule } from "ngx-page-scroll";
 import { GoTopButtonModule } from "ng2-go-top-button";
+import { AgmCoreModule } from "@agm/core";
 
 @NgModule({
-  imports: [NgxCarouselModule, NgxPageScrollModule, GoTopButtonModule],
+  imports: [
+    NgxCarouselModule,
+    NgxPageScrollModule,
+    GoTopButtonModule,
+    AgmCoreModule.forRoot({
+      apiKey: "AIzaSyBrqwKYyr5kt6IgMLEuIzSKzZvfHFCIS0o"
+    })
+  ],
   exports: [
     CommonModule,
     FlexLayoutModule,
@@ -40,7 +48,8 @@ import { GoTopButtonModule } from "ng2-go-top-button";
     MatMenuModule,
     NgxCarouselModule,
     NgxPageScrollModule,
-    GoTopButtonModule
+    GoTopButtonModule,
+    AgmCoreModule
   ],
   declarations: [
     //
