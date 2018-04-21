@@ -80,6 +80,7 @@
 }
 
 .mat-chip-list .mat-chip {
+    background-color: #ea6834;
     margin: 0 auto;
     margin-bottom: 48px;
     text-transform: uppercase;
