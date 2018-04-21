@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
    */
   private _navbar = {
     transparent: false,
-    logoImage: '/assets/images/logo.png'
+    logoImage: '/assets/icons/logo.png'
   };
 
   /**

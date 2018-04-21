@@ -6,6 +6,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./services.component.css"]
 })
 export class ServicesComponent implements OnInit {
+  /**
+   * @type array
+   */
+  private _background = {
+    path: "/assets/images/foto_background_servicos.jpg",
+    color: "black"
+  };
+
   constructor() {}
 
   ngOnInit() {}

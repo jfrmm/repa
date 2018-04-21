@@ -18,7 +18,7 @@ export class DescriptionComponent implements OnInit {
    * @type array
    */
   private _rightImage = {
-    path: "/assets/images/logo_2.png"
+    path: "/assets/icons/logo_2.png"
   }
 
   constructor() {}

@@ -1,110 +1,122 @@
-<div id="comp-services" class="home-content-block services">
+<div id="comp-services" class="home-content-block services" [style.background-image]="'url(' + _background.path + ')'" [style.background-color]="_background.color">
 
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <h1 class="color-invert">Serviços</h1>
 
-    <div fxFlex="33" class="card">
+  <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
+
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_canalizacoes.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
+          <mat-card-title>Canalizações</mat-card-title>
           <p>Instalações novas</p>
           <p>Reparações</p>
         </mat-card-content>
       </mat-card>
     </div>
 
-    <div fxFlex="33" class="card">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card color="primary">
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_portas_fechaduras.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
+          <mat-card-title>Portas e fechaduras</mat-card-title>
+          <p>Abertura de portas</p>
+          <p>Mudança de fechaduras</p>
         </mat-card-content>
       </mat-card>
     </div>
 
   </div>
 
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
 
-    <div fxFlex="33" class="card">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_desentupimentos.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
+          <mat-card-title>Desentupimentos</mat-card-title>
+          <p>Lava-loiças</p>
+          <p>Sanitas</p>
+          <p>Lavatórios e chuveiros</p>
+          <p>Pequenos esgotos</p>
         </mat-card-content>
       </mat-card>
     </div>
 
-    <div fxFlex="33" class="card">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card color="primary">
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_electricidade.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
+          <mat-card-title>Electricidade</mat-card-title>
+          <p>Instalação de tomadas, interruptores</p>
+          <p>Detecção e reparação de curto-circuitos</p>
         </mat-card-content>
       </mat-card>
     </div>
 
   </div>
 
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
 
-    <div fxFlex="33" class="card">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_electrodomesticos.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
+          <mat-card-title>Electrodomésticos</mat-card-title>
           <p>Instalações novas</p>
-          <p>Reparações</p>
+          <p>Reparação de máquinas de lavar roupa e loiça</p>
         </mat-card-content>
       </mat-card>
     </div>
 
-    <div fxFlex="33" class="card">
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card color="primary">
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_caixilharia_estores.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
+          <mat-card-title>Caixilharia e estores</mat-card-title>
+          <p>Reparação e substituição de estores</p>
+          <p>Mudança e reparação de janelas</p>
+          <p>Troca de vidros partidos</p>
         </mat-card-content>
       </mat-card>
     </div>
 
-    <div fxFlex="33" class="card">
+  </div>
+
+  <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
+
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
       <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_gas.png">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
+          <mat-card-title>Gás</mat-card-title>
+          <p>Instalação e reparação de esquentadores e caldeiras</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxFlex="100" fxFlex.gt-xs="50" class="card">
+      <mat-card color="primary">
+        <div class="icon">
+          <img mat-card-image src="/assets/icons/icon_pintura.png">
+        </div>
+        <mat-card-content>
+          <mat-card-title>Pintura</mat-card-title>
+          <p>Interiores e exteriores</p>
         </mat-card-content>
       </mat-card>
     </div>
