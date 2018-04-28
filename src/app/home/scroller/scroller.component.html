@@ -1,11 +1,11 @@
 <div class="home-content-block scroller" ngClass.xs="fxClass-xs" [style.background-color]="_introImage.color">
 
-  <div fxLayout="row" class="background" [style.background-image]="'url(' + _introImage.path + ')'">
+  <div fxLayout="row" class="background">
 
-    <div fxFlex="100" class="carousel">
+    <div fxFlex="100">
       <ngx-carousel [inputs]="carouselTile">
 
-        <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems">
+        <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems" [style.background-image]="'url(' + tile.background + ')'">
           <h1 class="color-invert">{{tile.title}}</h1>
           <h3 class="color-invert">{{tile.subTitle}}</h3>
 

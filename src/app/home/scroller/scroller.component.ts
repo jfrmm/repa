@@ -13,7 +13,6 @@ export class ScrollerComponent implements OnInit {
    * @type array
    */
   private _introImage = {
-    path: "/assets/images/hunter-haley-424256.jpg",
     color: "grey"
   };
 
@@ -27,17 +26,26 @@ export class ScrollerComponent implements OnInit {
       {
         title: "Vidros partidos?",
         subTitle: "janelas novas em 24 horas",
-        chip: "orçamentos grátis"
+        chip: "orçamentos grátis",
+        background: "/assets/images/foto_slider_1.jpg"
       },
       {
-        title: "Estores bloqueados?",
-        subTitle: "Reparamos estores em 24 horas",
-        chip: "orçamentos grátis"
+        title: "Fechaduras avariadas?",
+        subTitle: "Orçamentamos em 24 horas",
+        chip: "orçamentos grátis",
+        background: "/assets/images/foto_slider_2.jpg"
       },
       {
         title: "Esgotos entupidos?",
         subTitle: "Orçamentamos em 24 horas",
-        chip: "orçamentos grátis"
+        chip: "orçamentos grátis",
+        background: "/assets/images/foto_slider_3.jpg"
+      },
+      {
+        title: "Torneiras avariadas?",
+        subTitle: "Orçamentamos em 24 horas",
+        chip: "orçamentos grátis",
+        background: "/assets/images/foto_slider_4.jpg"
       }
     ];
 
