@@ -31,6 +31,7 @@ ngx-tile {
     box-shadow: none !important;
     margin-top: 150px;
     text-align: center;
+    padding: 0 16px;
 }
 
 ::ng-deep .fxClass-xs .tile {
@@ -51,7 +52,7 @@ ngx-tile {
 }
 
 ::ng-deep .ngxcarouselPoint li {
-    background: grey;
+    transform: scale(1);
 }
 
 ::ng-deep .ngxcarouselPoint li.active {
@@ -89,7 +90,7 @@ ngx-tile {
 }
 
 .fxClass-xs .mat-icon {
-    margin-top: 100px;
+    margin-top: 230px;
 }
 
 .mat-icon:active {
@@ -101,7 +102,6 @@ ngx-tile {
 .mat-chip-list .mat-chip {
     background-color: #ea6834;
     margin: 0 auto;
-    /* margin-bottom: 48px; */
     margin-top: 48px;
     text-transform: uppercase;
 }
