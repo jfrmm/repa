@@ -12,12 +12,12 @@ export class ScrollerComponent implements OnInit {
    *
    * @type array
    */
-  private _introImage = {
+  _introImage = {
     color: "grey"
   };
 
-  public carouselTileItems: Array<any>;
-  public carouselTile: NgxCarousel;
+  carouselTileItems: Array<any>;
+  carouselTile: NgxCarousel;
 
   constructor() {}
 

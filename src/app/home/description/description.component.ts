@@ -9,7 +9,7 @@ export class DescriptionComponent implements OnInit {
   /**
    * @type array
    */
-  private _leftImage = {
+  _leftImage = {
     path: "/assets/images/fundo_padrao_1.jpg",
     color: "white"
   };
@@ -17,7 +17,7 @@ export class DescriptionComponent implements OnInit {
   /**
    * @type array
    */
-  private _rightImage = {
+  _rightImage = {
     path: "/assets/icons/logo_2.png"
   }
 

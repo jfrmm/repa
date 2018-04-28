@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   /**
    * @type array
    */
-  private _navbar = {
+  _navbar = {
     transparent: false,
     logoImage: "/assets/icons/logo.png",
     height: 64
@@ -25,17 +25,17 @@ export class NavbarComponent implements OnInit {
   /**
    * @type number
    */
-  private _windowScroll: number = 0;
+  _windowScroll: number = 0;
 
   /**
    * @type boolean
    */
-  private _home: boolean = false;
+  _home: boolean = false;
 
   /**
    * @type array
    */
-  private _links = [];
+  _links = [];
 
   constructor(
     private _router: Router,

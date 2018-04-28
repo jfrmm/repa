@@ -11,14 +11,14 @@ export class GotoTopComponent implements OnInit {
    *
    * @type boolean
    */
-  private _animate: boolean;
+  _animate: boolean;
 
   /**
    * Speed of animated scroll. Must be greater than 1. 80 by default.
    *
    * @type number
    */
-  private _speed: number;
+  _speed: number;
 
   /**
    * Number of pixels to speed up when scrolling is animated.
@@ -26,7 +26,7 @@ export class GotoTopComponent implements OnInit {
    *
    * @type number
    */
-  private _acceleration: number;
+  _acceleration: number;
 
   /**
    * Number of pixels to be scrolled Y for button to be shown.
@@ -34,14 +34,14 @@ export class GotoTopComponent implements OnInit {
    *
    * @type number
    */
-  private _scrollDistance: number;
+  _scrollDistance: number;
 
   /**
    * User-defined styles config for the button.
    *
    * @type array
    */
-  private _styles;
+  _styles;
 
   constructor() {
     this._animate = true;

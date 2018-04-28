@@ -15,12 +15,12 @@ export class MailComponent implements OnInit {
   /**
    * @type FormGroup
    */
-  public mailForm: FormGroup;
+  mailForm: FormGroup;
 
   /**
    * @type array
    */
-  public form = {
+  form = {
     options: {
       floatLabel: "never"
     }
@@ -29,7 +29,7 @@ export class MailComponent implements OnInit {
   /**
    * @type array
    */
-  private _background = {
+  _background = {
     path: "/assets/images/fundo_padrao_formulario.jpg",
     color: "white"
   };

@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
   /**
    * @type array
    */
-  private _leftImage = {
+  _leftImage = {
     path: "/assets/icons/logo_2.png"
   };
 
