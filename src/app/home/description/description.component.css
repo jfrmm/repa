@@ -1,5 +1,5 @@
 .description {
-    height: 400px;
+    height: 500px;
 }
 
 .description.fxClass-xs {
@@ -10,11 +10,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 400px;
+    height: 500px;
 }
 
 .description .right-block {
-    background-color: #f3b24c;
+    background-color: #525251;
+    height: 500px;
+}
+
+.description .right-block {
     padding: 32px;
     text-align: center;
 }

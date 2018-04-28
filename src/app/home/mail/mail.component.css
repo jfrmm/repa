@@ -6,15 +6,23 @@
     padding: 32px 0;
 }
 
-.mail h1 {
-    text-transform: uppercase;
-    margin: 12px 0;
+.mail .header {
+    color: #525251;
     text-align: center;
 }
 
-.mail h2 {
+.mail h1 {
+    font-weight: 600;
+    text-transform: uppercase;
     margin: 12px 0;
-    text-align: center;
+}
+
+.mail h3 {
+    margin: 12px 0;
+}
+
+.form {
+    margin-top: 32px;
 }
 
 .row {
@@ -41,10 +49,6 @@
 
 ::ng-deep .row .mat-form-field-label {
     font-style: italic;
-}
-
-.form {
-    /* margin-bottom: 16px; */
 }
 
 .form-buttons {
