@@ -14,7 +14,7 @@
 }
 
 .description .right-block {
-    background-color: #525251;
+    background-color: #b5b6ba;
     height: 500px;
 }
 
@@ -24,11 +24,11 @@
 }
 
 .description .right-block img {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    width: 80%;
+    margin: 16px 0;
+    width: 100%;
 }
 
 .description .right-block p {
+    font-size: 1.2em;
     text-align: left;
 }

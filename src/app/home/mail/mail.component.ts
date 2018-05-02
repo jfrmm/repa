@@ -54,7 +54,6 @@ export class MailComponent implements OnInit {
   }
 
   public sendMail() {
-    // let fc = this.formControls
     let email = {
       sendTo: "geral@repa.com",
       name: this.formControls.name.value,

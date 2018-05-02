@@ -43,6 +43,10 @@ body {
     background-color: mat-color($primary) !important;
 }
 
+.mat-toolbar.mat-primary.main-toolbar {
+    background-color: white !important;
+}
+
 .mat-toolbar.mat-primary.main-toolbar.transparent {
     color: mat-color($foreground, text);
 }
