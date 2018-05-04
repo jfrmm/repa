@@ -2,27 +2,39 @@ import { Carousel } from "../_models/carousel";
 
 export const CAROUSELS: Carousel[] = [
   {
-    title: "Vidros e estores",
-    subTitle: "instalação, reparação e substituição",
+    title: "Vidros partidos?",
+    // subTitle: "instalação, reparação e substituição",
     chip: "orçamentos grátis",
     background: "/assets/images/foto_slider_1.jpg"
   },
   {
-    title: "Electricidade",
-    subTitle: "instalações e reparações",
+    title: "Electricidade a falhar?",
+    // subTitle: "instalações e reparações",
     chip: "orçamentos grátis",
     background: "/assets/images/foto_slider_2.jpg"
   },
   {
-    title: "Gás",
-    subTitle: "instalações e reparações",
+    title: "Cheiro a gás?",
+    // subTitle: "instalações e reparações",
     chip: "orçamentos grátis",
     background: "/assets/images/foto_slider_3.jpg"
   },
   {
-    title: "Canalizações e desentupimentos",
-    subTitle: "instalações, reparações e substituição",
+    title: "Esgotos entupidos?",
+    // subTitle: "instalações, reparações e substituição",
     chip: "orçamentos grátis",
     background: "/assets/images/foto_slider_4.jpg"
+  },
+  {
+    title: "Problemas com fechaduras?",
+    // subTitle: "",
+    chip: "orçamentos grátis",
+    background: "/assets/images/foto_slider_5.jpg"
+  },
+  {
+    title: "Torneiras a pingar?",
+    // subTitle: "",
+    chip: "orçamentos grátis",
+    background: "/assets/images/foto_slider_6.jpg"
   }
 ];

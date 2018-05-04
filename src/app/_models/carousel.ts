@@ -1,6 +1,6 @@
 export class Carousel {
   title: string;
-  subTitle: string;
+  subTitle?: string;
   chip: string;
   background: string;
 }
