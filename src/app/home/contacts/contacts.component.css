@@ -1,0 +1,30 @@
+.contacts {
+    background-color: #b5b6ba;
+    padding: 32px;
+    height: 150px;
+}
+
+.contacts.fxClass-xs {
+    height: auto;
+}
+
+.contacts .background {
+    height: 100%;
+}
+
+.contacts .left-block,
+.contacts .right-block {
+    text-align: center;
+}
+
+.contacts .left-block {
+    height: 150px;
+}
+
+.contacts h1 {
+    text-transform: uppercase;
+}
+
+.contacts .left-block img {
+    width: 80%;
+}
