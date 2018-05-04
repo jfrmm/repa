@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { NgxCarousel } from "ngx-carousel";
+import { Carousel } from "../../_models/carousel";
+import { CarouselService } from "../../_services/carousel.service";
 
 @Component({
   selector: "app-carousel",
@@ -16,40 +18,22 @@ export class CarouselComponent implements OnInit {
     color: "grey"
   };
 
-  carouselTileItems: Array<any>;
-  carouselTile: NgxCarousel;
+  /**
+   * The carousel items
+   *
+   * @type array
+   */
+  _carouselTileItems: Carousel[];
+  _carouselTile: NgxCarousel;
 
-  constructor() {}
+  constructor(private _carouselService: CarouselService) {}
 
   ngOnInit() {
-    this.carouselTileItems = [
-      {
-        title: "Vidros e estores",
-        subTitle: "instalação, reparação e substituição",
-        chip: "orçamentos grátis",
-        background: "/assets/images/foto_slider_1.jpg"
-      },
-      {
-        title: "Electricidade",
-        subTitle: "instalações e reparações",
-        chip: "orçamentos grátis",
-        background: "/assets/images/foto_slider_2.jpg"
-      },
-      {
-        title: "Gás",
-        subTitle: "instalações e reparações",
-        chip: "orçamentos grátis",
-        background: "/assets/images/foto_slider_3.jpg"
-      },
-      {
-        title: "Canalizações e desentupimentos",
-        subTitle: "instalações, reparações e substituição",
-        chip: "orçamentos grátis",
-        background: "/assets/images/foto_slider_4.jpg"
-      }
-    ];
+    this._carouselService.getCarousels().subscribe(carousels => {
+      this._carouselTileItems = carousels;
+    });
 
-    this.carouselTile = {
+    this._carouselTile = {
       grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
       slide: 1,
       speed: 250,

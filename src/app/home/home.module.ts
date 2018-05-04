@@ -13,6 +13,7 @@ import { ServiceService } from "../_services/service.service";
 import { CallNowComponent } from "./call-now/call-now.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { MailComponent } from "./mail/mail.component";
+import { CarouselService } from "../_services/carousel.service";
 
 @NgModule({
   imports: [SharedModule],
@@ -27,6 +28,6 @@ import { MailComponent } from "./mail/mail.component";
     ContactsComponent,
     MailComponent
   ],
-  providers: [ServiceService]
+  providers: [ServiceService, CarouselService]
 })
 export class HomeModule {}
