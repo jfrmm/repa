@@ -1,14 +1,14 @@
-.scroller {
+.carousel {
     margin-top: -64px;
     height: 100%;
     text-align: center;
 }
 
-.scroller.fxClass-xs {
+.carousel.fxClass-xs {
     height: auto;
 }
 
-.scroller .background {
+.carousel .background {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

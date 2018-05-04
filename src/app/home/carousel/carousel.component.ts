@@ -2,11 +2,11 @@ import { Component, OnInit } from "@angular/core";
 import { NgxCarousel } from "ngx-carousel";
 
 @Component({
-  selector: "app-scroller",
-  templateUrl: "./scroller.component.html",
-  styleUrls: ["./scroller.component.css"]
+  selector: "app-carousel",
+  templateUrl: "./carousel.component.html",
+  styleUrls: ["./carousel.component.css"]
 })
-export class ScrollerComponent implements OnInit {
+export class CarouselComponent implements OnInit {
   /**
    * The image that will be the background
    *
@@ -24,26 +24,26 @@ export class ScrollerComponent implements OnInit {
   ngOnInit() {
     this.carouselTileItems = [
       {
-        title: "Vidros partidos?",
-        subTitle: "janelas novas em 24 horas",
+        title: "Vidros e estores",
+        subTitle: "instalação, reparação e substituição",
         chip: "orçamentos grátis",
         background: "/assets/images/foto_slider_1.jpg"
       },
       {
-        title: "Fechaduras avariadas?",
-        subTitle: "Orçamentamos em 24 horas",
+        title: "Electricidade",
+        subTitle: "instalações e reparações",
         chip: "orçamentos grátis",
         background: "/assets/images/foto_slider_2.jpg"
       },
       {
-        title: "Esgotos entupidos?",
-        subTitle: "Orçamentamos em 24 horas",
+        title: "Gás",
+        subTitle: "instalações e reparações",
         chip: "orçamentos grátis",
         background: "/assets/images/foto_slider_3.jpg"
       },
       {
-        title: "Torneiras avariadas?",
-        subTitle: "Orçamentamos em 24 horas",
+        title: "Canalizações e desentupimentos",
+        subTitle: "instalações, reparações e substituição",
         chip: "orçamentos grátis",
         background: "/assets/images/foto_slider_4.jpg"
       }
