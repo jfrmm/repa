@@ -9,7 +9,7 @@ import { ServicesComponent } from "./services/services.component";
 import { MapSocialComponent } from "./map-social/map-social.component";
 
 // our Services
-import { AreaService } from "../_services/area.service";
+import { ServiceService } from "../_services/service.service";
 import { CallNowComponent } from "./call-now/call-now.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { MailComponent } from "./mail/mail.component";
@@ -27,6 +27,6 @@ import { MailComponent } from "./mail/mail.component";
     ContactsComponent,
     MailComponent
   ],
-  providers: [AreaService]
+  providers: [ServiceService]
 })
 export class HomeModule {}
