@@ -14,7 +14,7 @@ export const CAROUSELS: Carousel[] = [
     background: "/assets/images/foto_slider_electricidade.jpg"
   },
   {
-    title: "Cheiro a gás?",
+    title: "Cheira-lhe a gás?",
     // subTitle: "instalações e reparações",
     chip: "orçamentos grátis",
     background: "/assets/images/foto_slider_gas.jpg"

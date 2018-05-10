@@ -99,6 +99,10 @@ ngx-tile {
     width: 95px !important;
 }
 
+.mat-chip-list {
+    outline: none;
+}
+
 .mat-chip-list .mat-chip {
     background-color: #ea6834;
     margin: 0 auto;

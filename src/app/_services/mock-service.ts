@@ -5,7 +5,8 @@ export const SERVICES: Service[] = [
     image: "/assets/icons/icon_canalizacoes.png",
     title: "Canalizações",
     p1: "Instalações novas",
-    p2: "Reparações"
+    p2: "Reparações",
+    p3: "Fugas de água"
   },
   {
     image: "/assets/icons/icon_portas_fechaduras.png",

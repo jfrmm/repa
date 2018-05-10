@@ -1,4 +1,5 @@
-<div id="comp-call-now" class="home-content-block call-now" ngClass.xs="fxClass-xs" [style.background-image]="'url(' + _introImage.path + ')'" [style.background-color]="_introImage.color">
+<div id="comp-call-now" class="home-content-block call-now" ngClass.xs="fxClass-xs" [style.background-image]="'url(' + _introImage.path + ')'"
+  [style.background-color]="_introImage.color">
 
   <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="space-around center">
 
@@ -11,7 +12,9 @@
       <h3>ligue já</h3>
       <mat-chip-list>
         <mat-chip class="contact background-color-primary" disabled>
-          965874514
+          <span>965 874 514</span>
+          <span fxHide.xs> / </span>
+          <span>211 222 333</span>
         </mat-chip>
       </mat-chip-list>
     </div>
