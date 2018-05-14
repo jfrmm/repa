@@ -7,13 +7,14 @@ import { CarouselComponent } from "./carousel/carousel.component";
 import { DescriptionComponent } from "./description/description.component";
 import { ServicesComponent } from "./services/services.component";
 import { MapSocialComponent } from "./map-social/map-social.component";
+import { CallNowComponent } from "./call-now/call-now.component";
+import { MailComponent } from "./mail/mail.component";
+import { ContactsComponent } from "./contacts/contacts.component";
+import { FooterComponent } from "./footer/footer.component";
 
 // our Services
-import { ServiceService } from "../_services/service.service";
-import { CallNowComponent } from "./call-now/call-now.component";
-import { ContactsComponent } from "./contacts/contacts.component";
-import { MailComponent } from "./mail/mail.component";
 import { CarouselService } from "../_services/carousel.service";
+import { ServiceService } from "../_services/service.service";
 
 @NgModule({
   imports: [SharedModule],
@@ -25,9 +26,10 @@ import { CarouselService } from "../_services/carousel.service";
     ServicesComponent,
     MapSocialComponent,
     CallNowComponent,
+    MailComponent,
     ContactsComponent,
-    MailComponent
+    FooterComponent
   ],
-  providers: [ServiceService, CarouselService]
+  providers: [CarouselService, ServiceService]
 })
 export class HomeModule {}
