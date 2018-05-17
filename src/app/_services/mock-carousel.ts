@@ -23,7 +23,7 @@ export const CAROUSELS: Carousel[] = [
     title: "Estores partidos?",
     // subTitle: "",
     chip: "orçamentos grátis",
-    background: "/assets/images/foto_slider_esgotos.jpg"
+    background: "/assets/images/foto_slider_estores.jpg"
   },
   {
     title: "Esgotos entupidos?",
