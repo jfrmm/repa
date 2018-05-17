@@ -16,24 +16,26 @@ export class NavbarComponent implements OnInit {
   /**
    * @type array
    */
-  private _navbar = {
-    transparent: false
+  _navbar = {
+    transparent: false,
+    logoImage: "/assets/icons/logo.png",
+    height: 64
   };
 
   /**
    * @type number
    */
-  private _windowScroll: number = 0;
+  _windowScroll: number = 0;
 
   /**
    * @type boolean
    */
-  private _home: boolean = false;
+  _home: boolean = false;
 
   /**
    * @type array
    */
-  private _links = [];
+  _links = [];
 
   constructor(
     private _router: Router,
@@ -43,7 +45,7 @@ export class NavbarComponent implements OnInit {
     /**
      * PageScroll configuration
      */
-    PageScrollConfig.defaultScrollOffset = 64;
+    PageScrollConfig.defaultScrollOffset = this._navbar.height - 1;
     PageScrollConfig.defaultDuration = 250;
     PageScrollConfig.defaultEasingLogic = {
       ease: (t: number, b: number, c: number, d: number): number => {
@@ -124,7 +126,7 @@ export class NavbarComponent implements OnInit {
    * Update the navbar as fit
    */
   public updateNavbar() {
-    if (this._home && this._windowScroll < 250) {
+    if (this._home && this._windowScroll < this._navbar.height) {
       this._navbar.transparent = true;
     } else {
       this._navbar.transparent = false;

@@ -1,5 +1,5 @@
 .description {
-    height: 400px;
+    height: 500px;
 }
 
 .description.fxClass-xs {
@@ -7,10 +7,28 @@
 }
 
 .description .left-block {
-    background-color: lightgrey;
-    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
 }
 
 .description .right-block {
-    background-color: yellow;
+    background-color: #b5b6ba;
+    height: 500px;
+}
+
+.description .right-block {
+    padding: 32px;
+    text-align: center;
+}
+
+.description .right-block img {
+    margin: 16px 0;
+    width: 100%;
+}
+
+.description .right-block p {
+    font-size: 1.2em;
+    text-align: left;
 }

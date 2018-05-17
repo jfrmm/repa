@@ -1,20 +1,9 @@
 .footer {
-    height: 200px;
-}
-
-.footer.fxClass-xs {
-    height: auto;
-}
-
-.footer .background {
-    height: 100%;
-}
-
-.footer .left-block,
-.footer .right-block {
+    background-color: #ea6834;
+    font-size: .8em;
     text-align: center;
 }
 
-.footer h1 {
-    text-transform: uppercase;
+.jmmm {
+    opacity: 0.75;
 }

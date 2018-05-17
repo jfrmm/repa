@@ -1,15 +1,34 @@
 .services {
-    background: url(/assets/images/igor-ovsyannykov-252351-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: auto;
+    padding: 32px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+.mat-card-title {
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .card .mat-card {
     background: transparent;
     box-shadow: none;
     text-align: center;
+    height: 300px;
+}
+
+.card .mat-card .icon {
+    margin: 0 auto;
+    width: 50px;
+    background-color: #e96733;
+    border-radius: 50%;
+    padding: 16px;
 }
 
 .card .mat-card-image {
@@ -19,9 +38,18 @@
     width: auto;
     height: auto;
     margin: 0 auto;
-    padding: 8px;
 }
 
 .card .mat-card-title {
     border-bottom: 2px solid;
+    padding: 8px;
+}
+
+.card .mat-card-content p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.card .mat-card-content {
+    padding: 0 16px;
 }

@@ -9,8 +9,8 @@ export class CallNowComponent implements OnInit {
   /**
    * @type array
    */
-  private _introImage = {
-    path: "/assets/images/hunter-haley-424239-unsplash.jpg",
+  _introImage = {
+    path: "/assets/images/foto_fundo_telefone.jpg",
     color: "brown"
   };
 

@@ -15,12 +15,23 @@ export class MailComponent implements OnInit {
   /**
    * @type FormGroup
    */
-  public mailForm: FormGroup;
+  mailForm: FormGroup;
 
+  /**
+   * @type array
+   */
   form = {
     options: {
       floatLabel: "never"
     }
+  };
+
+  /**
+   * @type array
+   */
+  _background = {
+    path: "/assets/images/fundo_padrao_formulario.jpg",
+    color: "white"
   };
 
   get formControls() {
@@ -42,12 +53,9 @@ export class MailComponent implements OnInit {
     });
   }
 
-  // get name() { return this.mailForm.get('name'); }
-
   public sendMail() {
-    // let fc = this.formControls
     let email = {
-      sendTo: "geral@repa.com",
+      sendTo: "geral@repa.pt",
       name: this.formControls.name.value,
       subject: this.formControls.subject.value,
       place: this.formControls.place.value,
@@ -55,11 +63,11 @@ export class MailComponent implements OnInit {
     };
 
     email.body =
-      "[Contacto pelo site de " +
+      "[Contacto REPA: " +
       email.name +
-      ", localização " +
+      " de " +
       email.place +
-      "]\n" +
+      "]\r\n" +
       email.body;
 
     window.location.href =

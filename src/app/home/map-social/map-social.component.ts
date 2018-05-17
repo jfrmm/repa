@@ -6,6 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./map-social.component.css"]
 })
 export class MapSocialComponent implements OnInit {
+  lat: number = 38.721976;
+  lng: number = -9.139186;
+  zoom: number = 12;
+
   constructor() {}
 
   ngOnInit() {}

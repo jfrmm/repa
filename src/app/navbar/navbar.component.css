@@ -1,4 +1,5 @@
 .main-toolbar {
+    background-color: #f3b24c !important;
     z-index: 5;
     position: fixed;
     top: 0;
@@ -11,9 +12,17 @@
 }
 
 .main-toolbar.transparent {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .mat-menu-item {
     text-transform: uppercase;
+}
+
+.main-toolbar .logo img {
+    width: 100px;
+}
+
+.main-toolbar {
+    transition: background 0.25s ease;
 }

@@ -3,30 +3,33 @@ import { SharedModule } from "../shared/shared.module";
 
 // our home Components
 import { HomeComponent } from "./home.component";
-import { ScrollerComponent } from "./scroller/scroller.component";
+import { CarouselComponent } from "./carousel/carousel.component";
 import { DescriptionComponent } from "./description/description.component";
 import { ServicesComponent } from "./services/services.component";
 import { MapSocialComponent } from "./map-social/map-social.component";
+import { CallNowComponent } from "./call-now/call-now.component";
+import { MailComponent } from "./mail/mail.component";
+import { ContactsComponent } from "./contacts/contacts.component";
+import { FooterComponent } from "./footer/footer.component";
 
 // our Services
-import { AreaService } from "../_services/area.service";
-import { CallNowComponent } from "./call-now/call-now.component";
-import { FooterComponent } from "./footer/footer.component";
-import { MailComponent } from "./mail/mail.component";
+import { CarouselService } from "../_services/carousel.service";
+import { ServiceService } from "../_services/service.service";
 
 @NgModule({
   imports: [SharedModule],
   exports: [DescriptionComponent, ServicesComponent],
   declarations: [
     HomeComponent,
-    ScrollerComponent,
+    CarouselComponent,
     DescriptionComponent,
     ServicesComponent,
     MapSocialComponent,
     CallNowComponent,
-    FooterComponent,
-    MailComponent
+    MailComponent,
+    ContactsComponent,
+    FooterComponent
   ],
-  providers: [AreaService]
+  providers: [CarouselService, ServiceService]
 })
 export class HomeModule {}

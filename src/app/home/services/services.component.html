@@ -1,110 +1,20 @@
-<div id="comp-services" class="home-content-block services">
+<div id="comp-services" class="home-content-block services" [style.background-image]="'url(' + _background.path + ')'" [style.background-color]="_background.color">
 
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <h1 class="color-invert">Serviços</h1>
 
-    <div fxFlex="33" class="card">
+  <div fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="space-around center">
+
+    <div *ngFor="let service of _services" fxFlex="100" fxFlex.sm="50" fxFlex.gt-sm="33" class="card">
       <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
+        <div class="icon">
+          <img mat-card-image src="{{service.image}}">
+        </div>
         <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card color="primary">
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-  </div>
-
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card color="primary">
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-  </div>
-
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card color="primary">
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div fxFlex="33" class="card">
-      <mat-card>
-        <img mat-card-image src="/assets/icons/icon_door.png">
-        <mat-card-content>
-          <mat-card-title>Serviços</mat-card-title>
-          <p>Instalações novas</p>
-          <p>Reparações</p>
+          <mat-card-title>{{service.title}}</mat-card-title>
+          <p *ngIf="service.p1">{{service.p1}}</p>
+          <p *ngIf="service.p2">{{service.p2}}</p>
+          <p *ngIf="service.p3">{{service.p3}}</p>
+          <p *ngIf="service.p4">{{service.p4}}</p>
         </mat-card-content>
       </mat-card>
     </div>

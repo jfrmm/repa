@@ -1,4 +1,5 @@
 .map-social {
+    background-color: #ea6834;
     height: 400px;
 }
 
@@ -9,9 +10,18 @@
 .map-social .left-block {
     background-color: lightgrey;
     height: 400px;
+    width: 100%;
+}
+
+agm-map {
+    height: 400px;
 }
 
 .map-social .right-block {
-    background-color: yellow;
-    height: 400px;
+    padding: 32px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
 }
