@@ -29,18 +29,13 @@ ngx-tile {
 ::ng-deep .tile {
     background: transparent;
     box-shadow: none !important;
-    margin-top: 150px;
+    margin-top: 210px;
     text-align: center;
     padding: 0 16px;
 }
 
-::ng-deep .fxClass-xs .tile {
-    margin-top: 75px;
-}
-
-::ng-deep .carousel .tile h1,
-::ng-deep .carousel .tile h3 {
-    margin-bottom: 48px;
+::ng-deep .carousel.fxClass-xs .tile h1 {
+    font-size: 2em;
 }
 
 ::ng-deep .ngxcarouselPointDefault {
@@ -89,8 +84,15 @@ ngx-tile {
     transition: font-size 0.125s, height 0.125s, width 0.125s;
 }
 
+.fxClass-xs .leftRs .mat-icon,
+.fxClass-xs .rightRs .mat-icon {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+}
+
 .fxClass-xs .mat-icon {
-    margin-top: 130px;
+    display: none;
 }
 
 .mat-icon:active {

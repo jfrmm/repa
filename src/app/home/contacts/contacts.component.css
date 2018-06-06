@@ -28,3 +28,7 @@
 .contacts .left-block img {
     width: 80%;
 }
+
+.contacts h1 span {
+    white-space: nowrap;
+}
