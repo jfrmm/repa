@@ -7,13 +7,6 @@
 
         <ngx-tile NgxCarouselItem *ngFor="let tile of _carouselTileItems" [style.background-image]="'url(' + tile.background + ')'">
           <h1 class="color-invert">{{tile.title}}</h1>
-          <h3 class="color-invert">{{tile.subTitle}}</h3>
-
-          <mat-chip-list>
-            <mat-chip disabled>
-              {{tile.chip}}
-            </mat-chip>
-          </mat-chip-list>
         </ngx-tile>
 
         <button NgxCarouselPrev class='leftRs'>
