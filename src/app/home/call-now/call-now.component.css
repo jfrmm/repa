@@ -37,3 +37,8 @@
 .call-now .mat-chip.contact span {
     white-space: nowrap;
 }
+
+.call-now .mat-chip.contact span a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+}
