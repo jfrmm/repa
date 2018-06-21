@@ -32,3 +32,8 @@
 .contacts h1 span {
     white-space: nowrap;
 }
+
+.contacts h1 span a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+}
